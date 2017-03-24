@@ -11,6 +11,6 @@ public class RandomMovement : MonoBehaviour {
 	}
 	
 	void FixedUpdate () {
-        body.AddForce(new Vector2(Random.Range(-1, 1), Random.Range(-1, 1)));
+        body.AddForce(new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)));
     }
 }
