@@ -15,11 +15,13 @@ public class FringeController : MonoBehaviour {
 
     CircleCollider2D outterRing;
     EdgeCollider2D innerRing;
+    new Camera camera;
 
     void Start()
     {
         outterRing = GetComponent<CircleCollider2D>();
         innerRing = GetComponent<EdgeCollider2D>();
+        camera = Camera.main;
     }
 
     void Update()
@@ -49,7 +51,7 @@ public class FringeController : MonoBehaviour {
         }
     }
 
-    private void ExpandFringe()
+    void ExpandFringe()
     {
         Debug.Log("Fringe expansion");
         innerRing.enabled = false;
@@ -57,6 +59,14 @@ public class FringeController : MonoBehaviour {
         transform.localScale *= growthRate;
 
         innerRing.enabled = true;
+
+        ZoomOut();
+    }
+
+    void ZoomOut()
+    {
+        // TODO: interpolate in coroutine to make it smooth
+        camera.orthographicSize *= growthRate;
     }
 
     void NextTarget()
