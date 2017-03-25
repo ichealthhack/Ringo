@@ -22,6 +22,11 @@ public class FringeController : MonoBehaviour {
         innerRing = GetComponent<EdgeCollider2D>();
     }
 
+    void Update()
+    {
+
+    }
+
 	void OnTriggerEnter2D(Collider2D collider)
     {
         Debug.Log("Particle entered");
