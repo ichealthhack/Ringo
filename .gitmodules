@@ -1,0 +1,3 @@
+[submodule "submodules/fizzyo-challenge"]
+	path = submodules/fizzyo-challenge
+	url = git@github.com:Fizzyo/fizzyo-challenge.git

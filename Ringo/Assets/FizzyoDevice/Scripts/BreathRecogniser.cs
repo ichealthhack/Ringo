@@ -1,7 +1,7 @@
 ﻿using System;
-
-namespace Assets.Scripts.Fizzyo
+namespace Fizzyo
 {
+    #region Exhalation Event
     /// <summary>
     /// Provides data about the current breath to the receiver when the ExhalationComplete event fires.
     /// </summary>
@@ -58,6 +58,7 @@ namespace Assets.Scripts.Fizzyo
     }
 
     public delegate void ExhalationCompleteEventHandler(object sender, ExhalationCompleteEventArgs e);
+    #endregion
 
     /// <summary>
     /// Breath Analyser class decouples the logic of recognizing breaths from a stream of pressure samples
@@ -98,7 +99,6 @@ namespace Assets.Scripts.Fizzyo
         private float minBreathThreshold = .05f;
 
         public event ExhalationCompleteEventHandler ExhalationComplete;
-
 
         public BreathRecogniser(float MaxPressure, float MaxBreathLength)
         {
@@ -154,7 +154,6 @@ namespace Assets.Scripts.Fizzyo
                 this.maxPressure = value;
             }
         }
-
 
         /// The maximum breath length recorded during calibration
         public float MaxBreathLength
