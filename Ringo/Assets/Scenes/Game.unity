@@ -276,12 +276,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1062623685}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f214378bc4606945affa42007bc4ccc, type: 3}
+  m_Script: {fileID: 11500000, guid: f55786cff7ac0394cb2e1029a4fde48b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   growthRate: 1.5
   nextTragetMultiplier: 2
---- !u!1001 &1368831293
+--- !u!1001 &1299957843
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1714597305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7ac40d22ba80534cb68e2d9230cff38, type: 3}
+  m_Script: {fileID: 11500000, guid: 7aae68481c5457343a286800190ebf17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   creationFrequency: 1
